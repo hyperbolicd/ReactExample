@@ -47,7 +47,8 @@ class CreateEmployeeComponent extends Component {
     })
   }
 
-  cancel() {
+  cancel = (event) => {
+    event.preventDefault();
     this.props.router.navigate('/')
   }
 
